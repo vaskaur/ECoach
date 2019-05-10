@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ECoach</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Admin</string>
+    <string name="tab_text_2">Workshop</string>
+    <string name="tab_text_3">Driver</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_work_home">WorkHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string-array name="service_options_array">
+        <item>select type</item>
+        <item>Service Due</item>
+        <item>Check-up</item>
+        <item>Accident Case</item>
+
+    </string-array>
+    <string name="title_activity_scheduled_tasks">ScheduledTasksActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_task_list">TaskListActivity</string>
+    <string name="title_activity_driver_home">DriverHomeActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="emergency_prompt">Choose an issue</string>
+
+    <string-array name="Emergency_options_array">
+
+        <item>Dead on key</item>
+        <item>Engine cut out, won’t start</item>
+        <item>Flat tyre – no spare</item>
+        <item>Engine turning over, not firing</item>
+        <item>Loss of power</item>
+        <item>Engine management light on</item>
+        <item>Clutch fault</item>
+        <item>Gearbox/clutch fault</item>
+        <item>Overheating</item>
+        <item>Flat tyre – spare, no jack</item>
+    </string-array>
+
+</resources>

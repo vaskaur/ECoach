@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.AddBusActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/textviewHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bus:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last update"
+        android:textSize="15dp"
+        android:textStyle="italic"/>
+
+
+
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/firstLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Bus Number:" />
+
+
+               <EditText
+                   android:id="@+id/editTextBusno"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+
+                   android:hint="Bus Number"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/secondLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Bus Km:" />
+
+               <EditText
+                   android:id="@+id/editTextBuskm"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Bus Km"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/thirdLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Year of Manufacture:" />
+
+               <EditText
+                   android:id="@+id/editTextBusMnfyear"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Year"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/fourthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="On Route:" />
+
+               <EditText
+                   android:id="@+id/editTextBusOnroute"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Put on Route"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/fifthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Engine:" />
+
+               <EditText
+                   android:id="@+id/editTextBusEngine"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Engine"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/sixthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Battery:" />
+
+               <EditText
+                   android:id="@+id/editTextBusBattery"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Battery"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/seventhLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type A-Air Filter:" />
+
+               <EditText
+                   android:id="@+id/editTextBusAirfilter"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Air Filter"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/eightLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type A- Diesel Filter:" />
+
+               <EditText
+                   android:id="@+id/editTextBusDieselfilter"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Diesel Filter"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/ninthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type A- Engine oil:" />
+
+               <EditText
+                   android:id="@+id/editTextBusEngineoil"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Engine Oil"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/tenthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Service Date Type-A:" />
+
+               <EditText
+                   android:id="@+id/editTextBusServicedatea"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Service Date A"
+                   android:imeOptions="actionNext"
+                   android:inputType="date"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/eleventhLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Service Due Type-A:" />
+
+               <EditText
+                   android:id="@+id/editTextBusServiceduea"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Service Due A"
+                   android:imeOptions="actionNext"
+                   android:inputType="date"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/twelvethLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type B-Breaks:" />
+
+               <EditText
+                   android:id="@+id/editTextBusBreaks"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Breaks"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/thirteenthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type B-Bearing:" />
+
+               <EditText
+                   android:id="@+id/editTextBusBearing"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Bearing"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/fourteenthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Type B-Grease:" />
+
+               <EditText
+                   android:id="@+id/editTextBusGrease"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Grease"
+                   android:imeOptions="actionNext"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/fifteenthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Service Date Type-B:" />
+
+               <EditText
+                   android:id="@+id/editTextBusServicedateb"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Service Date-B"
+                   android:imeOptions="actionNext"
+                   android:inputType="date"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+           <LinearLayout
+               android:id="@+id/sixteenthLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <!-- place one TextView and one EditText inside layout using weight property -->
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="0.6"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="10dp"
+                   android:text="Service Due Type-B:" />
+
+               <EditText
+                   android:id="@+id/editTextBusServicedueb"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="1.4"
+                   android:hint="Service Due-B"
+                   android:imeOptions="actionNext"
+                   android:inputType="date"
+                   android:paddingLeft="10dp"
+                   android:singleLine="true" />
+           </LinearLayout>
+           <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+
+           <Button
+               android:id="@+id/ButtonAddbus"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:text="Submit" />
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

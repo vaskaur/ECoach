@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.DriverEmergencyActivity">
+
+   <Spinner
+       android:id="@+id/spinneremergencyD"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/Emergency_options_array"
+       android:prompt="@string/emergency_prompt"
+       android:spinnerMode="dropdown"
+       android:autofillHints="Select the issue"
+       android:layout_margin="8dp">
+
+
+   </Spinner>
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Location" />
+
+    <Button
+        android:id="@+id/buttonemergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Get Location" />
+</LinearLayout>

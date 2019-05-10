@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "327838381934",
+    "firebase_url": "https://ecoach-13fb3.firebaseio.com",
+    "project_id": "ecoach-13fb3",
+    "storage_bucket": "ecoach-13fb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327838381934:android:d9cde3d55bbe6618",
+        "android_client_info": {
+          "package_name": "com.vk.ecoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327838381934-3n14erd7ojo6dijnaadnpfd36ll1k3mb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vk.ecoach",
+            "certificate_hash": "548985fe13677bb7e0923be477974d3a6a2dbb8f"
+          }
+        },
+        {
+          "client_id": "327838381934-hqhm2a3d6e76vibkdohr7kr7uo4glsjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4YdUTFSbKugQj9ftEl_2fyA9GSMlfPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327838381934-hqhm2a3d6e76vibkdohr7kr7uo4glsjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
